@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    [navBar setBarTintColor:[UIColor whiteColor]];
+    [navBar setTitleTextAttributes:@{
+                                     NSFontAttributeName: [UIFont fontWithName:@"Avenir-Book" size:18],
+                                     NSForegroundColorAttributeName: [UIColor grayColor]
+                                     }];
     return YES;
 }
 
